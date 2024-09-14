@@ -1,0 +1,65 @@
+
+/* booking.css */
+
+/* Add any additional custom styles if needed */
+.relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .bg-cover {
+    background-size: cover;
+  }
+  
+  .bg-center {
+    background-position: center;
+  }
+  
+  @media (max-width: 768px) {
+    .h-[60vh] {
+      height: 50vh; /* Reduce height for smaller screens */
+    }
+  
+    .lg\:w-1\/2 {
+      width: 100%; /* Full width on smaller screens */
+      margin-right: 0;
+    }
+  
+    .lg\:space-x-6 {
+      margin-right: 0; /* Remove margin on smaller screens */
+    }
+  
+    .space-y-6 {
+      margin-bottom: 1.5rem; /* Adjust spacing between sections */
+    }
+}
+    
+  /* booking.css */
+
+/* Hide the image on small screens */
+.hidden {
+    display: none;
+  }
+  
+  /* Display the image on larger screens */
+  @media (min-width: 1024px) {
+    .hidden.lg\:block {
+      display: block;
+    }
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
