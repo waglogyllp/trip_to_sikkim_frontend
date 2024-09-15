@@ -7,18 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/tailwind.css'
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles/footer.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 /* index.css or App.css */
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+  </>
 )
 
 // If you want to start measuring performance in your app, pass a function
