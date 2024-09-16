@@ -186,7 +186,28 @@ const Booking = () => {
                                 className="p-3 w-full rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E69737]"
                             />
                         </div>
-
+<div className="mb-4">
+    <label className="block text-sm font-semibold mb-2">
+        Your Chosen Package
+    </label>
+    <div className="flex items-center p-3 w-full rounded-md border border-gray-300 shadow-sm">
+        {/* Package image */}
+        <img
+            src="https://your-image-url.com/package-image.jpg" // Replace with your image URL
+            alt="Package"
+            className="w-12 h-12 rounded-md mr-4"
+        />
+        {/* Package title */}
+        <input
+            type="text"
+            name="packageTitle"
+            value={formData.packageTitle}
+            onChange={handleChange}
+            className="w-full border-none focus:outline-none"
+            placeholder="Package title"
+        />
+    </div>
+</div>
                         {/* Select Field */}
                         <div className="mb-4">
                             <label className="block text-sm font-semibold mb-2">

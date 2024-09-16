@@ -10,7 +10,7 @@ const PackageCard = ({ pack }) => {
         alt={pack.title}
         className="w-full h-48 object-cover rounded-md mb-4"
       />
-      <h3 className="text-xl font-semibold mb-2">{pack.name}</h3>
+      <h3 className="text-xl font-semibold mb-2">{pack.title}</h3>
       <p className="text-gray-700 mb-4">
         {pack.description.substring(0, 200) + ' ...'}
       </p>
