@@ -63,12 +63,23 @@ const Booking = () => {
                 }
             )
 
+            console.log(response)
+
             if (!response.data.success) {
                 return alert("Oops! Something Went Wrong")
             }
 
             setValidationErrors({})
-            setFormData({})
+            setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                phone: "",
+                travelDate: "",
+                travelers: "",
+                vehicle: "normal", // Setting a default value for the select field
+                specialRequest: "",
+            })
             alert(response.data.message)
         } catch (err) {
             console.log(err.response.data)
