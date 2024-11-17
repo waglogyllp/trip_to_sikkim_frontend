@@ -234,7 +234,13 @@ const Booking = () => {
                                 Your Chosen Package
                             </label>
 
-                            <PackageCard pack={packageDetails} />
+                            {packageDetails == null ? (
+                                toast.error(
+                                    "Oops! Something went wrong while loading the package."
+                                )
+                            ) : (
+                                <PackageCard pack={packageDetails} />
+                            )}
                         </div>
 
                         {/* Vehicle Selection */}

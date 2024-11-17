@@ -1,243 +1,252 @@
 body {
-  font-family: 'League Spartan', sans-serif;
+    font-family: "League Spartan", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Libre Baskerville', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Libre Baskerville", serif;
 }
-p{
-  font-family: 'League Spartan', sans-serif;
+p {
+    font-family: "League Spartan", sans-serif;
 }
-a{
-  font-family: 'Libre Baskerville', serif;
-
+a {
+    font-family: "Libre Baskerville", serif;
 }
 @media (max-width: 768px) {
     .contact-section {
-      padding: 2rem; /* Adjust padding for smaller screens */
+        padding: 2rem; /* Adjust padding for smaller screens */
     }
-  
+
     .contact-form input,
     .contact-form textarea {
-      padding: 2rem; /* Adjust padding for input fields */
+        padding: 2rem; /* Adjust padding for input fields */
     }
-  
+
     .contact-form button {
-      padding: 1rem; /* Adjust button padding for smaller screens */
+        padding: 1rem; /* Adjust button padding for smaller screens */
     }
-  }
-  /* Ensure body takes up the full viewport height */
-html, body {
+}
+/* Ensure body takes up the full viewport height */
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-  
-  /* Set the max-width for the container to prevent overflow */
-  .container {
+}
+
+/* Set the max-width for the container to prevent overflow */
+.container {
     max-width: 100vw;
     margin: 0 auto;
     overflow-x: hidden;
-  }
-  
-  /* Ensure sections are properly spaced and prevent overflow */
-  .section {
+}
+
+/* Ensure sections are properly spaced and prevent overflow */
+.section {
     padding: 1rem; /* Adjust padding as needed */
     margin: 0 auto;
     max-width: 100vw;
-  }
-  
-  /* Control the page content layout */
-  .page-wrapper {
+}
+
+/* Control the page content layout */
+.page-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  
-  /* Control overflow for specific containers */
-  .overflow-hidden {
+}
+
+/* Control overflow for specific containers */
+.overflow-hidden {
     overflow: hidden;
-  }
-  
-  /* Handle any additional styling for fixed elements */
-  .fixed-container {
+}
+
+/* Handle any additional styling for fixed elements */
+.fixed-container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10; /* Ensure it stays on top */
-  }
-  
-  /* Handle the video iframe */
-  .video-container {
+}
+
+/* Handle the video iframe */
+.video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
-  }
-  
-  .video-container iframe {
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
-  }
-  
-  /* Add additional styling for elements that should not move */
-  .fixed-elements {
+}
+
+/* Add additional styling for elements that should not move */
+.fixed-elements {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 20; /* Ensure it stays on top */
-  }
-  /* global.css */
+}
+/* global.css */
 
 /* Container for the slider */
 .slider-section {
-  position: relative;
+    position: relative;
 }
 
 /* Style for each slider item */
 .slider-item {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Style for the slider images */
 .slider-item img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 /* In global.css or Tailwind config */
 li:hover {
-  color: #3b5d50;
-  border-bottom: 2px solid #3b5d50;
+    color: #3b5d50;
+    border-bottom: 2px solid #3b5d50;
 }
 
 /* Text overlay on slider */
 .slider-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 90%;
-  box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 90%;
+    box-sizing: border-box;
 }
-.bgg{
-background-color: #688D7F;
+.bgg {
+    background-color: #688d7f;
 }
-.bggg{
-  background-color: #3b5d50;
+.bggg {
+    background-color: #3b5d50;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .slider-text {
-    bottom: 20px;
-    left: 10px;
-    padding: 10px;
-  }
+    .slider-text {
+        bottom: 20px;
+        left: 10px;
+        padding: 10px;
+    }
 }
 /* In global.css or any other CSS file */
 
-
 @media (max-width: 576px) {
-  .slider-text {
-    font-size: 14px;
-    bottom: 5px;
-    left: 5px;
-    padding: 5px;
-  }
+    .slider-text {
+        font-size: 14px;
+        bottom: 5px;
+        left: 5px;
+        padding: 5px;
+    }
 }
 .card-container {
-  padding: 10px; /* Adjust the padding as needed */
+    padding: 10px; /* Adjust the padding as needed */
 }
 
 /* Team Section */
 .team-section {
-  padding: 60px 0;
-  background-color: #f4f4f4; /* Light background for contrast */
+    padding: 60px 0;
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
 .team-section .section-title {
-  font-size: 2.5rem;
-  color: #3b5d50; /* Primary color */
-  margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #3b5d50; /* Primary color */
+    margin-bottom: 20px;
 }
 
 .team-section p {
-  color: #333;
+    color: #333;
 }
 
 .team-section .feature {
-  text-align: center;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .team-section .feature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .team-section .feature img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  margin-bottom: 15px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 /* .bg{
   background: rgb(67,187,99);
 background: linear-gradient(90deg, rgba(67,187,99,1) 0%, rgba(45,163,92,1) 0%, rgba(229,251,255,1) 100%);
 } */
 .team-section .feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .team-section .feature a {
-  color: #3b5d50; /* Primary color */
-  text-decoration: none;
-  font-weight: bold;
+    color: #3b5d50; /* Primary color */
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .team-section .feature a:hover {
-  color: #2a4a40; /* Darker shade for hover */
+    color: #2a4a40; /* Darker shade for hover */
 }
 
 .team-section .feature .d-block.position {
-  color: #888;
-  margin-bottom: 10px;
+    color: #888;
+    margin-bottom: 10px;
 }
 
 .team-section .feature p {
-  color: #555;
+    color: #555;
 }
 
 .team-section .feature .more {
-  color: #3b5d50;
-  text-decoration: none;
-  font-weight: bold;
+    color: #3b5d50;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .team-section .feature .more:hover {
-  color: #2a4a40;
+    color: #2a4a40;
 }
-.fon{
-  font-family: "DM Serif Text", serif;
-  font-weight: bold;
-  font-style: normal;
+.fon {
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
+.bottom-button-container {
+    display: flex;
+    gap: 34px;
+    font-size: 11px;
+}
