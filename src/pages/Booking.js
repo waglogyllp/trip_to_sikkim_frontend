@@ -80,7 +80,6 @@ const Booking = () => {
             toast.success("We’ve sent you an email with the package details.")
             resetForm()
         } catch (error) {
-            console.error("Form submission error:", error.response)
             if (error.response?.data?.error) {
                 setValidationErrors(error.response.data.error)
             }
@@ -273,6 +272,7 @@ const Booking = () => {
                                 onChange={handleInputChange}
                                 className="p-3 w-full rounded-md border border-gray-300 focus:ring-2 focus:ring-[#E69737]"
                             ></textarea>
+                            {renderValidationError("specialRequest")}
                         </div>
 
                         {/* Total Price */}
